@@ -1,0 +1,16 @@
+{
+    "name": "Impoved Jira Admin Sidebar",
+    "version": "0.1",
+    "manifest_version": 2,
+    "description": "An Extension designed to fix Jira Clouds Administration Sidebar not scrolling to the active item.",
+    "content_scripts": [
+        {
+            "matches": [ "*://*.atlassian.net/secure/*",
+                         "*://*.atlassian.net/plugins/servlet/*",
+                         "*://*.atlassian.net/jira/software/c/projects/*/settings/*",
+                         "*://*.atlassian.net/auditing/*"
+                       ],
+            "js": ["script.js"]
+        }
+    ]
+}
